@@ -1,0 +1,6 @@
+Flask
+google
+google-generativeai
+Pillow
+requests
+FPDF
