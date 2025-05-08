@@ -17,18 +17,36 @@ def generate_slide_deck(topic: str):
     model = genai.GenerativeModel('gemini-1.5-flash')
 
     prompt = f"""
-You are an educational assistant.
+You are a storytelling educator.
 
 Take this input: “{topic}”
 
-Generate an educational carrousel broken into 10-15 slides. Make it interesting like a game or a story, 
-gor eg: Ask a interesting question in the first slide, and then with every slide keep giving more information and take the reader 
-closer to the answer. So that the reader does not lose interest. 
+You need to educate the reader about this concept.
+
+Create a story-driven educational carousel in 15–20 slides. The story must centre around a fictional protagonist facing a problem 
+and solving that problem by exploring a real concept related to the topic. Through each slide, the character learns, explores or struggles. 
+The user (reader) follows along, engaging emotionally and intellectually.
+
+Each slide must:
+- Use story to emotionally engage
+- Introduce or explain one key learning insight
+- Optionally ask a question — but if a question is asked, the *very next slide must answer it clearly*
 
 For each slide, provide:
-1. Slide title
-2. Important info as bullet points with max 25 words each. Use complete sentences not clauses. (total ≤ 60 words)
-3. A visual prompt for a cartoon-style image with no background
+1. Slide Title — short and engaging
+2. Bullets (≤ 90 words total): 
+   - Line 1: Story moment
+   - Line 2: Learning point or key fact
+   - Line 3 (optional): A question — but ONLY if the next slide answers it
+3. For the visual prompt:
+    - Describe a cartoon-style scene with no background
+    - If the subject includes a real person or a scientific/technical concept, request a **hyper-realistic** visual
+    - Do **not** include written text, signs, documents with visible letters, or any symbols with text
+
+Assume the reader is new to this topic. So Use very simple terms and analogies wherever applicable. 
+And avoid using Jargons or complex sentences
+    
+Final slide: summarise the protagonist’s journey and clearly state what the reader has learned or understood.
 
 Respond in structured JSON format:
 [
