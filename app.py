@@ -6,7 +6,7 @@ from dotenv import load_dotenv
 
 load_dotenv()
 
-st.set_page_config(page_title="📘 Learn In Slides", layout="wide")
+st.set_page_config(page_title="📘 GraspIT", layout="wide")
 
 # Branding
 st.markdown("<h1 style='text-align: center;'>📘 Learn in Slides</h1>", unsafe_allow_html=True)
@@ -40,6 +40,7 @@ if st.button("🚀 Generate Full Slide Deck"):
 slides = st.session_state.slides
 if slides:
     st.success(f"✅ Your deck on **{topic}** is ready!")
+    st.markdown("---")
 
     col1, col2, col3 = st.columns([1, 6, 1])
     with col1:
