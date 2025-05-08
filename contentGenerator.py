@@ -6,10 +6,11 @@ import base64
 import os
 import json
 import re
+import streamlit as st
 import requests
 
 # Set API key (ensure this is available in your environment)
-genai.configure(api_key=os.environ.get("GEMINI_API_KEY"))
+genai.configure(api_key=st.secrets["GEMINI_API_KEY"])
 
 # ===================== 1. Slide Generator using Gemini 1.5 Flash =====================
 def generate_slide_deck(topic: str):
