@@ -21,7 +21,7 @@ You are a storytelling educator.
 
 Take this input: “{topic}”
 
-You need to educate the reader about this concept.
+“You need to educate the reader in a way that feels like a story — where each part of the story reveals a real concept clearly and simply.”
 
 Create a story-driven educational carousel in 15–20 slides. The story must centre around a fictional protagonist facing a problem 
 and solving that problem by exploring a real concept related to the topic. Through each slide, the character learns, explores or struggles. 
@@ -35,9 +35,9 @@ Each slide must:
 For each slide, provide:
 1. Slide Title — short and engaging
 2. Bullets (≤ 90 words total): 
-   - Line 1: Story moment
-   - Line 2: Learning point or key fact
-   - Line 3 (optional): A question — but ONLY if the next slide answers it
+    - Line 1: Story moment (emotion, action, or thought)
+    - Line 2: Learning insight (fact, cause-effect, or analogy)
+    - Line 3 (optional): Reflective question — only if the next slide answers it”
 3. For the visual prompt:
     - Describe a cartoon-style scene with no background
     - If the subject includes a real person or a scientific/technical concept, request a **hyper-realistic** visual
@@ -46,7 +46,7 @@ For each slide, provide:
 Assume the reader is new to this topic. So Use very simple terms and analogies wherever applicable. 
 And avoid using Jargons or complex sentences
     
-Final slide: summarise the protagonist’s journey and clearly state what the reader has learned or understood.
+Final slide: summarise the protagonist’s journey and clearly state what the reader has learned or understood. “Use plain language and a warm tone. The summary should feel like a closing chapter and gently reinforce the big idea.”
 
 Respond in structured JSON format:
 [
