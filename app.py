@@ -6,10 +6,10 @@ from dotenv import load_dotenv
 
 load_dotenv()
 
-st.set_page_config(page_title="📘 GraspIT", layout="wide")
+st.set_page_config(page_title=" SlideIt", layout="wide")
 
 # Branding
-st.markdown("<h1 style='text-align: center;'>📘 Learn in Slides</h1>", unsafe_allow_html=True)
+st.markdown("<h1 style='text-align: center;'>📘 Learn through Slides</h1>", unsafe_allow_html=True)
 st.markdown("<p style='text-align: center;'>Turn any concept into a 15-slide visual lesson</p>", unsafe_allow_html=True)
 st.markdown("---")
 
@@ -20,7 +20,7 @@ if "current_slide" not in st.session_state:
     st.session_state.current_slide = 0
 
 # Input
-topic = st.text_input("🔍 What concept do you want to learn?", placeholder="e.g. Thermodynamics, Harappan Civilization")
+topic = st.text_input("🔍 What concept do you want to learn?", placeholder="e.g. Thermodynamics, Harappan Civilization or the Theory of Evolution")
 
 if st.button("🚀 Generate Full Slide Deck"):
     if not topic.strip():
