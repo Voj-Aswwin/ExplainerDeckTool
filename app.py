@@ -6,11 +6,11 @@ from dotenv import load_dotenv
 
 load_dotenv()
 
-st.set_page_config(page_title=" SlideIt", layout="wide")
+st.set_page_config(page_title="StoryIt", layout="wide")
 
 # Branding
-st.markdown("<h1 style='text-align: center;'>📘 Learn through Slides</h1>", unsafe_allow_html=True)
-st.markdown("<p style='text-align: center;'>Turn any concept into a 15-slide visual lesson</p>", unsafe_allow_html=True)
+st.markdown("<h1 style='text-align: center;'>📘 StoryIt. Learn through Stories</h1>", unsafe_allow_html=True)
+st.markdown("<p style='text-align: center;'>Turn any concept you want to learn into a 15-slide visual story lesson</p>", unsafe_allow_html=True)
 st.markdown("---")
 
 # Session state
