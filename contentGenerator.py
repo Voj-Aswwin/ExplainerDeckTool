@@ -14,7 +14,7 @@ genai.configure(api_key=st.secrets["GEMINI_API_KEY"])
 
 # ===================== 1. Slide Generator using Gemini 1.5 Flash =====================
 def generate_slide_deck(topic: str):
-    model = genai.GenerativeModel('gemini-1.5-flash')
+    model = genai.GenerativeModel('gemini-2.5-pro-exp-03-25')
 
     prompt = f"""
 You are a storytelling educator.
